@@ -25,6 +25,9 @@
 - **Multipliers**  
   - 20 × 18x18 Multipliers
 
+- **DSP** - Multiplier Blocks 
+  - 5
+
 - **PLLs** - Phase Locked Loops  
   - 2
 

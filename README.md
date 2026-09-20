@@ -9,16 +9,22 @@ It introduces the core concepts of programmable logic, hardware design, and FPGA
 FPGA/
 ├── LICENSE
 ├── README.md
-├── Basic/
+├── basics/
 │   ├── 01_what_is_fpga.md
 │   ├── 02_fpga_advantages.md
 │   ├── 03_lut.md
 │   ├── 04_flip_flops.md
 │   ├── 05_memory_architecture.md
 │   ├── 06_ip_cores.md
-│   └── 07_compilation_flow.md
-├── Tang_Nano_9k/
-│   └── 01_board_structure.md
+│   ├── 07_compilation_flow.md
+│   └── 08_io_architecture.md
+├── tang-nano-9k/
+│   ├── 01_board_structure.md
+│   └── blinking_led/
+│       ├── 01_system_architecture_document.md
+│       ├── 02_microarchitecture_specification.md
+│       ├── 03_Code/
+│       └── 04_toolchain.md
 └── .git/
 ```
 
