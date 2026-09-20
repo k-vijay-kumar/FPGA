@@ -16,8 +16,8 @@ FPGA/
 │   ├── 04_flip_flops.md
 │   ├── 05_memory_architecture.md
 │   ├── 06_ip_cores.md
-│   ├── 07_compilation_flow.md
-│   └── 08_io_architecture.md
+│   ├── 07_io_architecture.md
+│   └── 08_compilation_flow.md
 ├── tang-nano-9k/
 │   ├── 01_board_structure.md
 │   └── blinking_led/
