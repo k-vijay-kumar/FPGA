@@ -1,8 +1,9 @@
-The Flip-Flop (FF) & Synchronous Logic
+# The Flip-Flop (FF) & Synchronous Logic
 
-While a Look-Up Table (LUT) handles calculations, it has no memory of past events. 
+While a Look-Up Table (LUT) handles calculations, it has no memory of past events.
 To store data and coordinate timing, FPGAs group their LUTs alongside Flip-Flops (FF) inside a shared structural container called a Logic Block Container (or CFU).
 
+```text
 ┌──────────────────────────────────────────────┐
 │          Logic Block Container (CFU)         │
 │                                              │
@@ -11,17 +12,21 @@ To store data and coordinate timing, FPGAs group their LUTs alongside Flip-Flops
 └────────────────────────────┼─────────────────┘
 
  Clock Signal ── (Global Heartbeat)
+```
 
+## What is a Flip-Flop?
 
-What is a Flip-Flop?
 A Flip-Flop is a hardware circuit that stores 1 bit of digital data (1 or 0).
 
-The Role of the Clock
+## The Role of the Clock
+
 An FPGA relies on a Global Clock Signal (a master square wave that ticks millions of times per second) to act as a heartbeat.
-The Flip-Flop completely ignores changing data at its input until the exact moment a clock tick arrives (the rising edge).On that tick, it takes a snapshot of the input data and holds it rock-steady at its output until the next clock tick.
+The Flip-Flop completely ignores changing data at its input until the exact moment a clock tick arrives (the rising edge). On that tick, it takes a snapshot of the input data and holds it rock-steady at its output until the next clock tick.
 
-Synchronous Design: Preventing Chaos
-When a clock tick occurs, data leaves a Flip-Flop, travels through a LUT to be calculated, and arrives at the input of the next Flip-Flop.Because electricity takes time to travel through wires and LUTs, the signals fluctuate and glitch mid-calculation.The receiving Flip-Flop acts as a traffic gate. It waits for those messy signals to settle, safely catching the final stable answer only when the next clock tick hits. This keeps the entire system working in perfect harmony.
+## Synchronous Design: Preventing Chaos
 
-Container Flexibility
+When a clock tick occurs, data leaves a Flip-Flop, travels through a LUT to be calculated, and arrives at the input of the next Flip-Flop. Because electricity takes time to travel through wires and LUTs, the signals fluctuate and glitch mid-calculation. The receiving Flip-Flop acts as a traffic gate. It waits for those messy signals to settle, safely catching the final stable answer only when the next clock tick hits. This keeps the entire system working in perfect harmony.
+
+## Container Flexibility
+
 The logic block is highly adaptable. If your specific circuit needs to perform a quick calculation without waiting for a clock tick, it can be configured to bypass the Flip-Flop entirely, routing the LUT output straight to the next part of the chip.
