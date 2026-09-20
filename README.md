@@ -1,10 +1,11 @@
 # FPGA Learning Notes
 
-This repository is a beginner-friendly collection of FPGA learning materials. It introduces the core concepts of programmable logic, hardware design, and FPGA development flow using practical notes and examples.
-
+This repository is a beginner-friendly collection of FPGA learning materials.<br>
+It introduces the core concepts of programmable logic, hardware design, and FPGA development flow using practical notes and examples.
 
 ## Folder Structure
 
+```text
 FPGA/
 ├── LICENSE
 ├── README.md
@@ -19,8 +20,9 @@ FPGA/
 ├── Tang_Nano_9k/
 │   └── 01_structure.md
 └── .git/
-
+```
 
 ## Purpose
 
-This repository helps build a strong foundation in digital hardware design, especially for students and beginners starting with FPGA development.
+This repository helps build a strong foundation in digital hardware design,<br>
+especially for students and beginners starting with FPGA development.
