@@ -15,7 +15,7 @@
 - **Open Tool:** Click **FloorPlan Editor** from the top menu bar to open the visual layout window.
 - **Assign Pins:** Go to the **I/O Constraints** tab and assign the following parameters:
   - `sys_clk` → Set Location to **52** and IO Type to **LVCMOS33**
-  - `led` → Set Location to **10** and IO Type to **LVCMOS33**
+  - `led` → Set Location to **10** and IO Type to **LVCMOS18**
 - **Save:** Press **Ctrl + S**. The tool automatically writes the `.cst` file in the background.
 - Close the editor.
 
